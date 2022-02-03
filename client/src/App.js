@@ -10,4 +10,4 @@ export default function App() {
 }
 
 
-// TODO: Add hover in Header Component
+// TODO: Add hover in Header Component, Fix the main image width, push to github new features
