@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Vollkorn:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+}
+
+:root {
+    --principal-color: #252B31;
+    --principal-light-color: #374048;
+    --adjacent-color: #D49C6B;
+    --adjacent-light-color: #FFD2AA;
+    --light: #F6FAFB;
+
+    --open-sans: 'Open Sans', sans-serif;
+    --vollkorn: 'Vollkorn', serif;
+}
+
+
+/* MAIN */
+
+.main {
+    height: 87vh;
+    background-color: var(--principal-color);
+    color: var(--light);
+}
+
+.titles-main h3{
+    padding: 100px 100px 25px 100px;
+    font-family: var(--vollkorn);
+    font-size: 1.9em;
+    width: 400px;
+}
+
+.titles-main h6{
+    font-size: 0.7em;
+    width: 420px;
+    padding: 0px 100px;
+}
+
+.button-main {
+    display: flex;
+    padding: 5px 10px;
+    border: solid 1px var(--adjacent-color);
+    border-radius: 10px;
+    background-color: var(--adjacent-color);
+    margin: 12vh 15vh;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.button-main a{
+    text-decoration: none;
+    color: var(--light);
+    font-size: 0.65em;
+    font-family: var(--open-sans);
+}
+
+.image-main {
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    top: 10%;
+    right: 3%;
+}
+
+.image-main img{
+    width: 100%;
+    height: 100%;
+}

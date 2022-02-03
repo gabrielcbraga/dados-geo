@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Vollkorn:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+}
+
+:root {
+    --principal-color: #252B31;
+    --principal-light-color: #374048;
+    --adjacent-color: #D49C6B;
+    --adjacent-light-color: #FFD2AA;
+    --light: #F6FAFB;
+
+    --open-sans: 'Open Sans', sans-serif;
+    --vollkorn: 'Vollkorn', serif;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    height: 5rem;
+    font-family: var(--open-sans);
+    font-weight: 500;
+    font-size: 0.60em;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--light);
+    background-color: var(--principal-color);
+}
+
+.header a{
+    color: var(--light);
+}
+
+.header .icon-header{
+    margin: 30px;
+}
+
+.links-header a{
+    text-decoration: none;
+    padding: 35px;
+}
+
+.signup-header a{
+    margin: 30px;
+    text-decoration: none;
+    border: solid 1px var(--adjacent-color);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--adjacent-color);
+}
+
+
+
