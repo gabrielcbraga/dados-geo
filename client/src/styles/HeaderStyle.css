@@ -19,7 +19,7 @@
 
 .header {
     display: flex;
-    height: 5rem;
+    height: 8.2rem;
     font-family: var(--open-sans);
     font-weight: 500;
     font-size: 0.60em;
@@ -42,6 +42,14 @@
     padding: 35px;
 }
 
+.links-header a:hover{
+    color: #5E6668;
+    transition: 0.5s ease;
+    border-bottom: 1px solid var(--adjacent-color);
+    padding-bottom: 2px;
+    border-radius: 2px;
+}
+
 .signup-header a{
     margin: 30px;
     text-decoration: none;
@@ -49,6 +57,11 @@
     padding: 10px;
     border-radius: 10px;
     background-color: var(--adjacent-color);
+}
+
+.signup-header a:hover{
+    color: #5E6668;
+    transition: 0.5s ease;
 }
 
 
