@@ -3,12 +3,12 @@ import {Header, Main, LinksHome, ContactForm} from './components'
 export default function App() {
   return (
     <h1>
-      <div>
         <Header />
         <Main />
         <LinksHome />
         <ContactForm />
-      </div>
     </h1>
   )
 }
+
+// TODO: Create a contact form and a style link, remove the readme.md in the client
