@@ -7,7 +7,6 @@ import placeholderImage from '../images/background-placeholder.png'
 const Main = () => {
     return (
         <>
-            <div className="linkshome-top-bar"></div>
             <div className="linkshome">
                 <div className="title-linkshome">
                     <h1>Links</h1>

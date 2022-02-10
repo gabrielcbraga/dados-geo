@@ -13,49 +13,31 @@ const ContactForm = () => {
     const emailPlaceholder = <FontAwesomeIcon icon={faKeyboard} />
 
     return (
-        <div class="background">
-            <div class="container">
-                <div class="screen">
-                    <div class="screen-header">
-                        <div class="screen-header-left">
-                            <div class="screen-header-button close"></div>
-                            <div class="screen-header-button maximize"></div>
-                            <div class="screen-header-button minimize"></div>
+        <div className="contactform-container">
+            <div className="contactform-title">
+                <h1>Fale Conosco</h1>
+                <h2>Fale conosco para mandar uma mensagem,
+                    ajuda ou colaborar com este portal.</h2>
+            </div>
+            <div className="contactform-container-form">
+                <div className="contactform-header">
+                    <h4>Formulário de Contato</h4>
+                </div>
+                <div className="contactform-container-form-inside">
+                    <form action="POST">
+                        <div className="contactform-form-input-single">
+                            <label htmlFor="name">Nome</label>
+                            <input type="text" name="name" />
                         </div>
-                        <div class="screen-header-right">
-                            <div class="screen-header-ellipsis"></div>
-                            <div class="screen-header-ellipsis"></div>
-                            <div class="screen-header-ellipsis"></div>
+                        <div className="contactform-form-input-single">
+                            <label htmlFor="email">E-mail</label>
+                            <input type="text" name="email" />
                         </div>
-                    </div>
-                    <div class="screen-body">
-                        <div class="screen-body-item left">
-                            <div class="app-title">
-                                <span>FALE</span>
-                                <span>CONOSCO</span>
-                            </div>
+                        <div className="contactform-form-input-single message">
+                            <label htmlFor="message">Mensagem</label>
+                            <textarea name="message"></textarea>
                         </div>
-                        <div class="screen-body-item">
-                            <div class="app-form">
-                                <div class="app-form-group">
-                                    <input class="app-form-control" placeholder="NAME" value="DadosGeo" />
-                                </div>
-                                <div class="app-form-group">
-                                    <input class="app-form-control" placeholder="EMAIL" />
-                                </div>
-                                <div class="app-form-group">
-                                    <input class="app-form-control" placeholder="NOME" />
-                                </div>
-                                <div class="app-form-group message">
-                                    <input class="app-form-control" placeholder="MENSAGEM" />
-                                </div>
-                                <div class="app-form-group buttons">
-                                    <button class="app-form-button">CANCELAR</button>
-                                    <button class="app-form-button">ENVIAR</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>

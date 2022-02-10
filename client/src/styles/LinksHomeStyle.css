@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Vollkorn:wght@400;700&display=swap');
-
 * {
     margin: 0;
 }
@@ -10,56 +9,46 @@
     --adjacent-color: #D49C6B;
     --adjacent-light-color: #FFD2AA;
     --light: #F6FAFB;
-
     --open-sans: 'Open Sans', sans-serif;
     --vollkorn: 'Vollkorn', serif;
 }
 
-.linkshome-top-bar {
-    background: var(--light);
-    height: 20vh;
-    /* transform: scale(100%) rotate(358deg) translate(2px, 0px); */
-    clip-path: polygon(100% 0, 100% 50%, 0 100%, 0% 50%);
-    margin-top: -10vh;
-    max-width: 100%;
-}
-
-.linkshome{
+.linkshome {
     background: var(--light);
     height: 70vh;
-    margin-top: -1vh;
+    padding-top: 7vh;
 }
 
-.title-linkshome h1{
+.title-linkshome h1 {
     text-align: center;
     font-size: 3.75rem;
     font-family: var(--vollkorn);
 }
 
-.container-box-linkshome{
+.container-box-linkshome {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     margin: 15vh 7vh;
 }
 
-.box-linkshome{
+.box-linkshome {
     width: 250px;
     height: 150px;
     text-align: center;
 }
 
-.box-linkshome a{
+.box-linkshome a {
     text-decoration: none;
     color: var(--principal-color)
 }
 
-.box-linkshome img{
+.box-linkshome img {
     width: 250px;
     height: 70px;
 }
 
-.box-text-linkshome span{
+.box-text-linkshome span {
     font-size: 1.5rem;
     font-family: var(--open-sans);
 }
