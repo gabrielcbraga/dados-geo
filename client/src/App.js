@@ -1,14 +1,13 @@
-import { Header, Main, LinksHome, ContactForm } from './components'
+import { Header, Main, LinksHome, ContactForm, Footer } from './components'
 
 export default function App() {
-    return ( 
+    return (
         <h1 >
-        <Header />
-        <Main />
-        <LinksHome />
-        <ContactForm />
+            <Header />
+            <Main />
+            <LinksHome />
+            <ContactForm />
+            <Footer />
         </h1>
     )
 }
-
-// TODO: Create a contact form and a style link, remove the readme.md in the client

@@ -58,20 +58,6 @@
     font-family: var(--vollkorn);  
 }
 
-.contactform-container-form form{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.contactform-form-input-single{
-    display: flex;
-    max-width: 40%;
-    flex-direction: column;
-    padding: 4vh 3vw;
-    flex-grow: grow;
-}
-
 .contactform-form-input-single label{
     font-family: var(--open-sans);
     font-size: 1.5rem;
@@ -83,4 +69,67 @@
     height: 7vh;
     border-radius: 5px;
     border: none;
+    width: 30vw;
+    font-family: var(--open-sans);
+    padding-left: 1vw;
+    font-size: 15px;
+}
+
+.contactform-form-input-single input::placeholder{
+    font-family: FontAwesome;
+    font-size: 20px;
+}
+
+.message textarea{
+    padding-left: 1vw;
+}
+
+.message textarea::placeholder{
+    font-family: FontAwesome;
+    font-size: 20px;
+    padding-top: 1vh;
+}
+
+.contactform-container-form-inside form{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.contactform-form-input-single{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+    margin-left: 7%;
+}
+
+.message{
+    margin-left: 10vw;
+}
+
+.message textarea{
+    width: 30vw;
+    height: 28vh;
+    resize: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.contactform-form-buttonsubmit{
+    justify-content: center;
+    margin-left: 33%;
+}
+
+.contactform-form-buttonsubmit button{
+    display: flex;
+    padding: 0.3vw 0.7vw;
+    border: solid 1px var(--adjacent-color);
+    border-radius: 5px;
+    background-color: var(--adjacent-color);
+    width: 25vw;
+    align-items: center;
+    justify-content: center;
+    height: 6vh;
+    font-family: var(--open-sans);
+    font-size: 1.1rem;
+    font-weight: 700;
 }

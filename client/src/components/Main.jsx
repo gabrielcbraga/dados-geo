@@ -11,7 +11,7 @@ const Main = () => {
                 <h3>Seu portal de geoprocessamento.</h3>
                 <h6>Conjunto de links de sites com dados georreferenciados, feito para te ajudar!</h6>
             <div className="button-main">
-                <a href="#">Veja os links</a>
+                <a href="#links">Veja os links</a>
             </div>
             </div>
             <div className="image-main">

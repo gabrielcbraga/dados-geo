@@ -2,16 +2,9 @@ import React from "react";
 
 import '../styles/ContactFormStyle.css'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-import { faUser } from '@fortawesome/free-regular-svg-icons'
-import { faKeyboard } from '@fortawesome/free-regular-svg-icons'
-
+import 'font-awesome/css/font-awesome.min.css';
 
 const ContactForm = () => {
-    const namePlaceholder = `${<FontAwesomeIcon icon={faUser} />} | `
-    const emailPlaceholder = <FontAwesomeIcon icon={faKeyboard} />
-
     return (
         <div className="contactform-container">
             <div className="contactform-title">
@@ -25,17 +18,32 @@ const ContactForm = () => {
                 </div>
                 <div className="contactform-container-form-inside">
                     <form action="POST">
-                        <div className="contactform-form-input-single">
-                            <label htmlFor="name">Nome</label>
-                            <input type="text" name="name" />
+                        <div className="contactform-form-leftcontainer">
+                            <div className="contactform-form-input-single">
+                                <label htmlFor="name">Nome</label>
+                                <input 
+                                type="text" 
+                                name="name"
+                                placeholder="&#xF007;  | " />
+                            </div>
+                            <div className="contactform-form-input-single">
+                                <label htmlFor="email">E-mail</label>
+                                <input
+                                type="text"
+                                name="email"
+                                placeholder="&#xF0e0;  | " />
+                            </div>
                         </div>
-                        <div className="contactform-form-input-single">
-                            <label htmlFor="email">E-mail</label>
-                            <input type="text" name="email" />
+                        <div className="contactform-form-rightcontainer">
+                            <div className="contactform-form-input-single message">
+                                <label htmlFor="message">Mensagem</label>
+                                <textarea
+                                 name="message"
+                                 placeholder="&#xF0e0;  | "></textarea>
+                            </div>
                         </div>
-                        <div className="contactform-form-input-single message">
-                            <label htmlFor="message">Mensagem</label>
-                            <textarea name="message"></textarea>
+                        <div className="contactform-form-buttonsubmit">
+                            <button type="submit">Enviar</button>
                         </div>
                     </form>
                 </div>

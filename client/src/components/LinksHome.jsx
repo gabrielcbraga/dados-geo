@@ -13,7 +13,7 @@ const Main = () => {
                 </div>
                 <div className="container-box-linkshome">
                     <div className="box-linkshome">
-                        <a href="#">
+                        <a href="#nacional">
                             <div className="box-img-linkshome">
                                 <img src={placeholderImage} alt="Placeholder Image" />
                             </div>
@@ -23,7 +23,7 @@ const Main = () => {
                         </a>
                     </div>
                     <div className="box-linkshome">
-                        <a href="#">
+                        <a href="#internacional">
                             <div className="box-img-linkshome">
                                 <img src={placeholderImage} alt="Placeholder Image" />
                             </div>
@@ -33,7 +33,7 @@ const Main = () => {
                         </a>
                     </div>
                     <div className="box-linkshome">
-                        <a href="#">
+                        <a href="#drones">
                             <div className="box-img-linkshome">
                                 <img src={placeholderImage} alt="Placeholder Image" />
                             </div>
@@ -43,7 +43,7 @@ const Main = () => {
                         </a>
                     </div>
                     <div className="box-linkshome">
-                        <a href="#">
+                        <a href="#mapas">
                             <div className="box-img-linkshome">
                                 <img src={placeholderImage} alt="Placeholder Image" />
                             </div>

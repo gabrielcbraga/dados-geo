@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Vollkorn:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+}
+
+:root {
+    --principal-color: #252B31;
+    --principal-light-color: #374048;
+    --adjacent-color: #D49C6B;
+    --adjacent-light-color: #FFD2AA;
+    --light: #F6FAFB;
+
+    --open-sans: 'Open Sans', sans-serif;
+    --vollkorn: 'Vollkorn', serif;
+}
+
+.footer {
+    background-color: var(--light);
+    color: var(--principal-color); 
+    height: 20vh;
+    margin-top: 10vh;
+}
+
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-left-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-left-links a{
+    font-size: 1.5rem;
+    font-family: var(--open-sans);
+    text-decoration: none;
+    color: var(--principal-color);
+}
+
+.footer-right-logo{
+    font-size: 1.5rem;
+}

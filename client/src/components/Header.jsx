@@ -12,10 +12,10 @@ const Header = () => {
                     <FontAwesomeIcon icon={faMap} /> <span>DadosGeo</span>
                 </div>
                 <div className="links-header">
-                    <a href="#">Home</a>
-                    <a href="#">Links</a>
-                    <a href="#">Comunidade</a>
-                    <a href="#">Fale Conosco</a>
+                    <a href="#home">Home</a>
+                    <a href="#links">Links</a>
+                    <a href="#comunidade">Comunidade</a>
+                    <a href="#contato">Fale Conosco</a>
                 </div>
                 <div className="signup-header">
                     <a href="#">Crie sua conta</a>
