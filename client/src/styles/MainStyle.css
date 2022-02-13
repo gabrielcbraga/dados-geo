@@ -81,3 +81,10 @@
     height: 100%;
 }
 
+.main-separator{
+    clip-path: polygon(0 0, 100% 0, 100% 10%, 0 26%);
+    width: 100%;
+    background-color: var(--principal-color);
+    height: 40vh;
+    margin-top: -1vh;;
+}

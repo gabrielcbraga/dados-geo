@@ -16,7 +16,7 @@
 .linkshome {
     background: var(--light);
     height: 70vh;
-    padding-top: 7vh;
+    margin-top: -20vh;
 }
 
 .title-linkshome h1 {
