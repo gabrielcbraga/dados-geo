@@ -132,4 +132,11 @@
     font-family: var(--open-sans);
     font-size: 1.1rem;
     font-weight: 700;
+    color: var(--light);
+    cursor: pointer;
+}
+
+.contactform-form-buttonsubmit button:hover{
+    color: #5E6668;
+    transition: 0.5s ease;
 }

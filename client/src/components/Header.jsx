@@ -1,6 +1,7 @@
 import React from "react";
 
 import '../styles/HeaderStyle.css'
+import '../styles/ResponsiveStyle.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMap } from '@fortawesome/free-regular-svg-icons'

@@ -1,0 +1,15 @@
+@media only screen and (width: 1110px) {
+    .linkshome{
+        margin-bottom: 10vh;
+    }
+}
+
+@media only screen and (width: 1028px) {
+    .links-header{
+        display: none;
+    }
+
+    .signup-header{
+        display: none;
+    }
+}
