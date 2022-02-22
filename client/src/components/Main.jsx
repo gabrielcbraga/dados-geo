@@ -9,8 +9,8 @@ const Main = () => {
         <>
             <div className="main">
                 <div className="titles-main">
-                    <h3>Seu portal de geoprocessamento.</h3>
-                    <h6>Conjunto de links de sites com dados georreferenciados, feito para te ajudar!</h6>
+                    <span>Seu portal de geoprocessamento.</span>
+                    <p>Conjunto de links de sites com dados georreferenciados, feito para te ajudar!</p>
                     <div className="button-main">
                         <a href="#links">Veja os links</a>
                     </div>
