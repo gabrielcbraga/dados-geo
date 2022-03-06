@@ -1,10 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
+import Axios from "axios"
+
+import { object, string } from 'yup'
 
 import '../styles/ContactFormStyle.css'
 
 import 'font-awesome/css/font-awesome.min.css';
 
 const ContactForm = () => {
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
+
+    const validation = async () => {
+
+        let contactSchema = object({
+            name: string().required(),
+            email: string().email().required(),
+            message: string().required().min(5).max(300)
+        })
+
+        const userFormData = {
+            name: name,
+            email: email,
+            message: message
+        }
+
+        const validationIsValid = await contactSchema.isValid(userFormData)
+
+        if (validationIsValid) {
+            console.log('Enviado')
+            Axios({
+                method: "post",
+                url: "/",
+                data: {
+                    name: userFormData.name,
+                    email: userFormData.email,
+                    message: userFormData.message
+                },
+            });
+        }
+    }
+
+    const submitForm = (event) => {
+        event.preventDefault()
+
+        validation()
+    }
+
     return (
         <div className="contactform-container">
             <div className="contactform-title">
@@ -21,29 +65,32 @@ const ContactForm = () => {
                         <div className="contactform-form-leftcontainer">
                             <div className="contactform-form-input-single">
                                 <label htmlFor="name">Nome</label>
-                                <input 
-                                type="text" 
-                                name="name"
-                                placeholder="&#xF007;  | " />
+                                <input
+                                    type="text"
+                                    name="name"
+                                    onChange={e => setName(e.target.value)}
+                                    placeholder="&#xF007;  | " />
                             </div>
                             <div className="contactform-form-input-single">
                                 <label htmlFor="email">E-mail</label>
                                 <input
-                                type="text"
-                                name="email"
-                                placeholder="&#xF0e0;  | " />
+                                    type="text"
+                                    name="email"
+                                    onChange={e => setEmail(e.target.value)}
+                                    placeholder="&#xF0e0;  | " />
                             </div>
                         </div>
                         <div className="contactform-form-rightcontainer">
                             <div className="contactform-form-input-single message">
                                 <label htmlFor="message">Mensagem</label>
                                 <textarea
-                                 name="message"
-                                 placeholder="&#xF0e0;  | "></textarea>
+                                    name="message"
+                                    onChange={e => setMessage(e.target.value)}
+                                    placeholder="&#xF0e0;  | "></textarea>
                             </div>
                         </div>
                         <div className="contactform-form-buttonsubmit">
-                            <button type="submit">Enviar</button>
+                            <button type="submit" onClick={submitForm}>Enviar</button>
                         </div>
                     </form>
                 </div>
@@ -51,5 +98,7 @@ const ContactForm = () => {
         </div>
     )
 }
+
+
 
 export default ContactForm
