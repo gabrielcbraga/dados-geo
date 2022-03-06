@@ -30,9 +30,8 @@ const ContactForm = () => {
         const validationIsValid = await contactSchema.isValid(userFormData)
 
         if (validationIsValid) {
-            console.log('Enviado')
             Axios({
-                method: "post",
+                method: "POST",
                 url: "/",
                 data: {
                     name: userFormData.name,
