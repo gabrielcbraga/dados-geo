@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "DadosGeo",
+  "name": "Seu portal de geoprocessamento",
   "icons": [
     {
       "src": "favicon.ico",
