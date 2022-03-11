@@ -1,12 +1,10 @@
 @media only screen and (width: 1110px) {
-    .linkshome{
+/*     .linkshome{
         margin-bottom: 10vh;
-    }
+    } */
 }
 
-@media only screen and (max-width: 1028px) {
-
-    /* HEADER */
+@media only screen and (max-width: 1053px) {
 
     .links-header{
         display: none;
@@ -20,20 +18,21 @@
         justify-content: center;
     }
 
-    /* MAIN */
-
     .main{
         justify-content: center;
+        height: 110vh;
     }
 
     .image-main{
         display: none;
     }
 
-    /* LINKSHOME */
-
     .linkshome{
-        margin-bottom: 20vh;
+        margin-bottom: 10vh;
+    }
+
+    .contactform-form-buttonsubmit{
+        margin-bottom: 40vh;
     }
 }
 
@@ -45,21 +44,21 @@
     
     .titles-main span{
         margin-bottom: 5vh;
-        font-size: 1.7em !important;
+        font-size: 1.7em
     }
 
     .titles-main p{
-        font-size: 0.7em !important;
+        font-size: 0.7em;
     }
 
     .main{
-        min-height: 90vh;
+        min-height: 70vh;
     }
 }
 
 @media only screen and (max-width: 599px) {
     .linkshome{
-        padding-bottom: 40vh;
+        padding-bottom: 30vh;
     }
 
 }
@@ -71,22 +70,23 @@
         align-items: center;
         margin-bottom: -5vh;
     }
+
+    .main{
+        height: 70vh;
+    }
+
     .titles-main span{
-        font-size: 1.5em !important; 
+        font-size: 1.2em 
     }
 
     .titles-main p{
-        font-size: 0.6em !important;
-        width: 410px;
-    }
-
-    .linkshome{
-        padding-bottom: 40vh;
+        font-size: 0.6em;
+        width: 370px;
     }
 
     .contactform-container-form{
         align-items: center;
-        height: 105vh !important;
+        height: 105vh;
     }
 
     .contactform-form-rightcontainer{
@@ -112,4 +112,18 @@
     .footer-container{
         align-items: center;
     }
+
+    .contactform-title h2{
+        text-align: center;
+        width: 300px;
+    }
+
+    .contactform-header h4{
+        text-align: center;
+    }
+
+    .contactform-form-buttonsubmit{
+        padding-top: 3vh;
+    }
 }
+

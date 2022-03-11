@@ -1,6 +1,7 @@
 import React from "react";
 
-import '../styles/FooterStyle.css'
+import './styles/FooterStyle.css'
+import './styles/ResponsiveStyle.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMap } from '@fortawesome/free-regular-svg-icons'
@@ -11,7 +12,6 @@ const Footer = () => {
             <div className="footer-container">
                 <div className="footer-left-links">
                     <a href="#">Links</a>
-                    <a href="#">Comunidade</a>
                     <a href="#">Fale Conosco</a>
                 </div>
                 <div className="footer-right-logo">

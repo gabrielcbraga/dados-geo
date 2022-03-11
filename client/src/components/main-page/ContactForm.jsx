@@ -3,7 +3,7 @@ import Axios from "axios"
 
 import { object, string } from 'yup'
 
-import '../styles/ContactFormStyle.css'
+import './styles/ContactFormStyle.css'
 
 import 'font-awesome/css/font-awesome.min.css';
 

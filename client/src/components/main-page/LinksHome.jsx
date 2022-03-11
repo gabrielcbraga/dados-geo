@@ -1,8 +1,8 @@
 import React from "react";
 
-import '../styles/LinksHomeStyle.css'
+import './styles/LinksHomeStyle.css'
 
-import placeholderImage from '../images/background-placeholder.png'
+import placeholderImage from '../../images/background-placeholder.png'
 
 const Main = () => {
     return (

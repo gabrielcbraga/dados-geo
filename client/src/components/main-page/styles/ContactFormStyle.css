@@ -115,8 +115,8 @@
 }
 
 .contactform-form-buttonsubmit{
-    justify-content: center;
     margin-left: 33%;
+    margin-top: -2vh;
 }
 
 .contactform-form-buttonsubmit button{

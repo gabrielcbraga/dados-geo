@@ -1,8 +1,8 @@
 import React from "react";
 
-import '../styles/MainStyle.css'
+import './styles/MainStyle.css'
 
-import ImageHome from '../images/homepage.png'
+import ImageHome from '../../images/homepage.png'
 
 const Main = () => {
     return (
