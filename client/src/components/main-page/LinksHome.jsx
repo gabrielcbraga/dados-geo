@@ -7,7 +7,7 @@ import placeholderImage from '../../images/background-placeholder.png'
 const Main = () => {
     return (
         <>
-            <div className="linkshome">
+            <div className="linkshome" id="link">
                 <div className="title-linkshome">
                     <h1>Links</h1>
                 </div>

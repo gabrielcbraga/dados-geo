@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import './styles/MainStyle.css'
 
@@ -12,7 +13,14 @@ const Main = () => {
                     <span>Seu portal de geoprocessamento.</span>
                     <p>Conjunto de links de sites com dados georreferenciados, feito para te ajudar!</p>
                     <div className="button-main">
-                        <a href="#links">Veja os links</a>
+                        <Link
+                            to="link"
+                            spy={true}
+                            smooth={true}
+                            duration={700}
+                            offset={-80}
+                        >Veja os links
+                        </Link>
                     </div>
                 </div>
                 <div className="image-main">

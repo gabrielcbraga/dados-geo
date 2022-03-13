@@ -49,7 +49,7 @@ const ContactForm = () => {
     }
 
     return (
-        <div className="contactform-container">
+        <div className="contactform-container" id="form-contact">
             <div className="contactform-title">
                 <h1>Fale Conosco</h1>
                 <h2>Fale conosco para mandar uma mensagem,

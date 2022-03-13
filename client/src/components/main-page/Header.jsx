@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import './styles/HeaderStyle.css'
 
@@ -7,19 +8,33 @@ import { faMap } from '@fortawesome/free-regular-svg-icons'
 
 const Header = () => {
     return (
-            <div className="header">
-                <div className="icon-header">
-                    <FontAwesomeIcon icon={faMap} /> <span>DadosGeo</span>
-                </div>
-                <div className="links-header">
-                    <a href="#home">Home</a>
-                    <a href="#links">Links</a>
-                    <a href="#contato">Fale Conosco</a>
-                </div>
-                <div className="signup-header">
-                    <a href="#">Crie sua conta</a>
-                </div>
+        <div className="header" onClick={scroll.scrollToTop}>
+            <div className="icon-header">
+                <FontAwesomeIcon icon={faMap} /> <span>DadosGeo</span>
             </div>
+            <div className="links-header">
+                <a onClick={scroll.scrollToTop}>Home</a>
+                <a><Link
+                    to="link"
+                    spy={true}
+                    smooth={true}
+                    duration={700}
+                    offset={-80}
+                >Links
+                </Link>
+                </a>
+                <a><Link
+                    to="form-contact"
+                    spy={true}
+                    smooth={true}
+                    duration={700}
+                >Fale Conosco
+                </Link></a>
+            </div>
+            <div className="signup-header">
+                <a href="#">Crie sua conta</a>
+            </div>
+        </div>
     )
 }
 
