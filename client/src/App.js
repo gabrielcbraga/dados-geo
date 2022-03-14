@@ -1,30 +1,73 @@
+import React from 'react';
+
 import { Header, Main, LinksHome, ContactForm, Footer } from './components'
+import { NacionalPage, MapasPage, DronesPage, InternacionalPage } from './components/links-single'
+
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
 
 export default function App() {
 
-    const componentDidMount = () => {
-        this.callBackendAPI()
-          .then(res => this.setState({ data: res.express }))
-          .catch(err => console.log(err));
+  const componentDidMount = () => {
+    this.callBackendAPI()
+      .then(res => this.setState({ data: res.express }))
+      .catch(err => console.log(err));
+  }
+
+  const callBackendAPI = async () => {
+    const response = await fetch('/');
+    const body = await response.json();
+
+    if (response.status !== 200) {
+      throw Error(body.message)
     }
+    return body;
+  };
 
-    const callBackendAPI = async () => {
-        const response = await fetch('/');
-        const body = await response.json();
-    
-        if (response.status !== 200) {
-          throw Error(body.message) 
-        }
-        return body;
-      };
-
-    return (
-        <h1 >
-            <Header />
-            <Main />
-            <LinksHome />
-            <ContactForm />
-            <Footer />
-        </h1>
-    )
+  return (
+    <BrowserRouter>
+      <h1>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/nacionalPage" element={<NacionalPageComponent />} />
+          <Route path="/internacionalPage" element={<InternacionalPageComponent />} />
+          <Route path="/dronesPage" element={<DronesPageComponent />} />
+          <Route path="/mapasPage" element={<MapasPageComponent />} />
+        </Routes>
+        <Footer />
+      </h1>
+    </BrowserRouter>
+  )
 }
+
+const Home = () => (
+  <>
+      <Main />
+      <LinksHome />
+      <ContactForm />
+  </>
+)
+
+const NacionalPageComponent = () => (
+  <>
+    <NacionalPage />
+  </>
+)
+
+const InternacionalPageComponent = () => (
+  <>
+    <InternacionalPage />
+  </>
+)
+
+const DronesPageComponent = () => (
+  <>
+    <DronesPage />
+  </>
+)
+
+const MapasPageComponent = () => (
+  <>
+    <MapasPage />
+  </>
+)
