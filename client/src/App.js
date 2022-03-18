@@ -26,7 +26,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <h1>
-        <Header />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/nacionalPage" element={<NacionalPageComponent />} />
@@ -34,7 +34,7 @@ export default function App() {
           <Route path="/dronesPage" element={<DronesPageComponent />} />
           <Route path="/mapasPage" element={<MapasPageComponent />} />
         </Routes>
-        <Footer />
+
       </h1>
     </BrowserRouter>
   )
@@ -42,9 +42,11 @@ export default function App() {
 
 const Home = () => (
   <>
-      <Main />
-      <LinksHome />
-      <ContactForm />
+    <Header />
+    <Main />
+    <LinksHome />
+    <ContactForm />
+    <Footer />
   </>
 )
 

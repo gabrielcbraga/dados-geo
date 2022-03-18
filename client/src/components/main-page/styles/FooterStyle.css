@@ -53,3 +53,7 @@ a{
 .footer-right-logo{
     cursor: pointer;
 }
+
+.background-white{
+    background-color: var(--light);
+}

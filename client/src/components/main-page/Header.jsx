@@ -31,9 +31,6 @@ const Header = () => {
                 >Fale Conosco
                 </Link></a>
             </div>
-            <div className="signup-header">
-                <a href="#">Crie sua conta</a>
-            </div>
         </div>
     )
 }
