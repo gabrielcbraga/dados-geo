@@ -22,6 +22,16 @@ const Main = () => {
                         >Veja os links
                         </Link>
                     </div>
+                    <div className="button-main button-programs">
+                        <Link
+                            to="programs"
+                            spy={true}
+                            smooth={true}
+                            duration={700}
+                            offset={-80}
+                        >Veja os programas
+                        </Link>
+                    </div>
                 </div>
                 <div className="image-main">
                     <img src={ImageHome} alt="" />

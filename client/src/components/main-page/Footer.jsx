@@ -23,12 +23,14 @@ const Footer = () => {
                         >Links
                         </Link>
                     </a>
-                    <a> <Link
-                            to="form-contact"
+                    <a>
+                        <Link
+                            to="programs"
                             spy={true}
                             smooth={true}
                             duration={700}
-                        >Fale Conosco
+                            offset={-80}
+                        >Programas
                         </Link>
                     </a>
                 </div>

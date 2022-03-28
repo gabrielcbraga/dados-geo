@@ -62,7 +62,7 @@ const DronesPage = () => {
                     <div className="box-linkshome">
                         <a href="#mapas">
                             <div className="box-img-linkshome">
-                                <img src={placeholderImage} alt="Placeholder Image" />
+                                <img src={placeholderImage}/>
                             </div>
                             <div className="box-text-linkshome">
                                 <span>Ministério</span>

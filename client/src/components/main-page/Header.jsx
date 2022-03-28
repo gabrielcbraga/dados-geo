@@ -24,12 +24,14 @@ const Header = () => {
                 </Link>
                 </a>
                 <a><Link
-                    to="form-contact"
+                    to="programs"
                     spy={true}
                     smooth={true}
                     duration={700}
-                >Fale Conosco
-                </Link></a>
+                    offset={-80}
+                >Programas
+                </Link>
+                </a>
             </div>
         </div>
     )

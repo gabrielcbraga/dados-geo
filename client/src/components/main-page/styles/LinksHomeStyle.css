@@ -52,3 +52,11 @@
     font-size: 1.5rem;
     font-family: var(--open-sans);
 }
+
+.bg-black{
+    background-color: var(--principal-color);
+}
+
+.tl-light{
+    color: var(--light);
+}

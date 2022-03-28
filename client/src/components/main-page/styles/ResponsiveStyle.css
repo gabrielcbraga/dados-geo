@@ -111,6 +111,7 @@
 
     .footer-container{
         align-items: center;
+        margin-top: -20vh;
     }
 
     .contactform-title h2{
