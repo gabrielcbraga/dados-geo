@@ -72,7 +72,11 @@
     }
 
     .main{
-        height: 70vh;
+        height: 85vh;
+    }
+
+    .main a{
+        text-align: center;
     }
 
     .titles-main span{
@@ -111,7 +115,7 @@
 
     .footer-container{
         align-items: center;
-        margin-top: 25vh;
+        margin-top: 50vh;
     }
 
     .contactform-title h2{
@@ -138,6 +142,25 @@
     .contactform-maps, .contactform-maps{
         flex: 100%;
         margin: 0;
+    }
+
+    .contactform-infos{
+        margin: 3vh 0;
+    }
+
+    .button-main{
+        margin: 5vh 2vw 0 2vw;
+        padding: 1vw 10vh;
+    }
+
+    .titles-main{
+        padding-right: 0;
+        padding-left: 0;
+        width: 322px;
+    }
+
+    .titles-main p{
+        width: 322px;
     }
 }
 
