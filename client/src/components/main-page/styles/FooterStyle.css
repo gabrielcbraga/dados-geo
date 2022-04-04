@@ -16,8 +16,8 @@
 }
 
 .footer {
-    background-color: var(--light);
-    color: var(--principal-color); 
+    background-color: var(--principal-color);
+    color: var(--light); 
     height: 20vh;
     margin-top: 0vh;
 }
@@ -39,7 +39,7 @@
     font-size: 1.5rem;
     font-family: var(--open-sans);
     text-decoration: none;
-    color: var(--principal-color);
+    color: var(--light);
 }
 
 .footer-right-logo{
@@ -53,8 +53,4 @@ a{
 
 .footer-right-logo{
     cursor: pointer;
-}
-
-.background-white{
-    background-color: var(--principal-color);
 }

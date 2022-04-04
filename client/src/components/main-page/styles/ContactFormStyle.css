@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Vollkorn:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+}
+
+:root {
+    --principal-color: #252B31;
+    --principal-light-color: #374048;
+    --adjacent-color: #D49C6B;
+    --adjacent-light-color: #FFD2AA;
+    --light: #F6FAFB;
+
+    --open-sans: 'Open Sans', sans-serif;
+    --vollkorn: 'Vollkorn', serif;
+}
+
+.contactform{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-contactform {
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.title-contactform h1{
+    font-size: 3.75rem;
+    font-family: var(--vollkorn);
+}
+
+.contactform-container-infos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contactform-maps{
+    height: 50vh;
+    width: 35vw;
+    background-color: var(--principal-color);
+    margin-top: 2vh;
+    margin-left: 1vw;
+    flex: 45%;
+}
+
+.contactform-infos{
+    height: 50vh;
+    width: 35vw;
+    background-color: var(--principal-color);
+    margin-top: 2vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    flex: 45%;
+}
+
+.contactform-infos-texts{
+    margin-left: 2vw;
+    margin-top: 4vh;
+    margin-bottom: 10vh;
+}
+
+.contactform-infos-texts-mail{
+    margin-bottom: 10vh;
+}
+
+.contactform-infos-texts h4{
+    font-size: 2.1rem;
+    font-family: var(--vollkorn);
+    color: var(--adjacent-color);
+    padding-bottom: 1vh;
+}
+
+.contactform-infos-texts p{
+    font-size: 1.1rem;
+    font-family: var(--open-sans);
+    color: var(--light);
+}

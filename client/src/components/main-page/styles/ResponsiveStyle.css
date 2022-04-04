@@ -111,7 +111,7 @@
 
     .footer-container{
         align-items: center;
-        margin-top: -20vh;
+        margin-top: 25vh;
     }
 
     .contactform-title h2{
@@ -125,6 +125,19 @@
 
     .contactform-form-buttonsubmit{
         padding-top: 1.5vh;
+    }
+
+    .footer-mb{
+        padding-bottom: 10vh !important;
+    }
+
+    .contactform-container-infos{
+        flex-direction: row;
+    }
+
+    .contactform-maps, .contactform-maps{
+        flex: 100%;
+        margin: 0;
     }
 }
 
