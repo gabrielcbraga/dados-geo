@@ -25,8 +25,8 @@
 
 .linkshome-single {
     background: var(--light);
-    height: 70vh;
-    margin-top: 10vh;
+    height: 100vh;
+    margin-top: 15vh;
 }
 
 .title-linkshome h1 {
@@ -43,9 +43,15 @@
 }
 
 .box-linkshome {
-    width: 250px;
-    height: 150px;
+    width: 300px;
+    height: 200px;
     text-align: center;
+    margin-bottom: 20vh;
+}
+
+.box-linkshome:hover{
+    background-color: rgb(37, 43, 49, 0.25);
+    transition: 1s ease;
 }
 
 .box-linkshome a {
@@ -53,9 +59,9 @@
     color: var(--principal-color)
 }
 
-.box-linkshome img {
-    width: 250px;
-    height: 70px;
+.box-linkshome img{
+    min-width: 250px;
+    min-height: 130px;
 }
 
 .box-text-linkshome span {
